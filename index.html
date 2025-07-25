@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Bridge Course</title>
     <style>
         body {
-            background-color: #ffffff;
-            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            font-family: 'Segoe UI';
+            background: linear-gradient(to right, #f0f0f5, #e6f0ff);
+            color: #001f4d;
         }
 
         h1 {
-            color: rgb(155, 80, 0);
+            color: #cc5500;
             font-size: 50px;
             text-align: center;
             text-decoration: underline;
@@ -16,42 +19,38 @@
 
         h2 {
             text-align: center;
-            color: rgb(0, 1, 68);
+            color: #003366;
             font-size: 30px;
-            text-decoration: wavy;
+            text-decoration: underline wavy;
         }
 
         h3 {
-            color: rgb(0, 1, 68);
+            color: #003366;
             font-size: 28px;
             margin-top: 30px;
         }
 
-        ul {
-            font-size: 20px;
-            line-height: 1.8;
-        }
-        ol {
+        ul, ol {
             font-size: 20px;
             line-height: 1.8;
         }
 
         button {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #003366;
+            color: #ffffff;
             font-size: 18px;
             padding: 10px 15px;
-            border: 4px solid rgb(0, 1, 68);
-            border-radius: 50px;
-            margin: 20px;
+            border: none;
+            border-radius: 30px;
+            margin: 20px auto;
+            display: block;
             cursor: pointer;
         }
-
+        
         .center-image {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border: 10px solid rgb(103, 41, 0);
+            margin: 0 auto;
+            border: 10px solid #994d00;
             border-radius: 50%;
             width: 180px;
             height: 180px;
@@ -60,96 +59,107 @@
         .profile-image {
             display: block;
             margin-top: 20px;
-            border: 10px solid rgb(0, 1, 68);
+            border: 8px solid #003366;
             border-radius: 50%;
             width: 180px;
             height: 180px;
         }
-        p {
+
+        .intro-box {
+            background-color: #ffffff;
+            border-left: 6px solid #003366;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 30px auto;
+            width: 60%;
             font-size: 20px;
             line-height: 1.6;
-            margin: 20px;
-            text-align: justify;
         }
-        .main{
+
+        .main, .friends {
             display: flex;
-            justify-content: space-between;   
-            margin-left: 20%;
-            margin-right: 20%;
+            justify-content: space-between;
+            margin: 0 20%;
+            flex-wrap: wrap;
         }
-        .friends{
-            display: flex;
-            justify-content: space-between;   
-            margin-left: 20%;
-            margin-right: 20%;
-        }
+
         h4 {
             text-align: center;
-            color: rgb(0, 1, 68);
+            color: #003366;
             font-size: 24px;
         }
-        
+
+        .friends div {
+            text-align: center;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
 
     <h1>Lovely Professional University</h1>
+    <img src="lpulogo.jpg" alt="Lovely Professional University Logo" class="center-image">
 
-    <img src="lpulogo.jpg" alt="LPU Logo" class="center-image">
+    <h2>Welcome to My Profile</h2>
+    <img src="agrim.jpg" alt="Photo of Agrim Jain" class="profile-image">
 
-    <h2>Welcome to my Profile</h2>
+    <div class="intro-box">
+        <p>
+            Hello! I'm <strong>Agrim Jain</strong>, currently pursuing my <strong>Master’s in Computer Applications</strong> at Lovely Professional University. I'm deeply passionate about technology and programming.  
+            <br><br>
+            I love building things that solve real-world problems and constantly seek out opportunities to grow my skills. Whether it's exploring new programming languages, contributing to projects, or helping fellow learners — I believe learning never stops.  
+            <br><br>
+            I'm a curious thinker, a positive learner, and always ready to take on challenges that help me become a better version of myself every day.
+        </p>
+    </div>
 
-    <img src="agrim.jpg" alt="My Photo" class="profile-image">
-    <p>
-        Hello! I'm Agrim Jain, a student of Masters in Computer Applications at Lovely Professional University. I enjoy learning about technology and programming. I always try to improve my knowledge and explore new skills.
-<div class="main">
-<div>
-    <h3>My Strengths</h3>
-    <ul>
-            <li>Good at solving problems</li>
-            <li>Always curious to learn</li>
-            <li>Helpful to others</li>
-            <li>Positive mindset</li>
-            <li>Comfortable with computers</li>
-        </ul>
-</div>
-       
-        
-<div>
-    <h3>Areas I Want to Improve</h3>
-
-        <ol>
-            <li>Sometimes I get distracted</li>
-            <li>I need to manage my time better</li>
-            <li>Overthink small things</li>
-            <li>Need to reduce screen time</li>
-            <li>Sometimes rush into decisions</li>
-         </ol>
+    <div class="main">
+        <div>
+            <h3>My Strengths</h3>
+            <ul>
+                <li>Good at solving problems</li>
+                <li>Always curious to learn</li>
+                <li>Helpful to others</li>
+                <li>Positive mindset</li>
+                <li>Comfortable with computers</li>
+            </ul>
         </div>
-</div>
 
-  <div>
-        <h3 style="text-align: center;">Animals I like </h3>
+        <div>
+            <h3>Areas I Want to Improve</h3>
+            <ol>
+                <li>Sometimes I get distracted</li>
+                <li>I need to manage my time better</li>
+                <li>Overthink small things</li>
+                <li>Need to reduce screen time</li>
+                <li>Sometimes rush into decisions</li>
+            </ol>
+        </div>
     </div>
-<div class="Friends">
+
     <div>
-        <img src="tiger.jpeg"class="profile-image">
-        <h4>Tiger</h4>
+        <h3 style="text-align: center;">Animals I Like</h3>
     </div>
-    <div>
-        <img src="elephant.jpeg"class="profile-image">
-        <h4>Elephant</h4>
+
+    <div class="friends">
+        <div>
+            <img src="tiger.jpeg" alt="Tiger" class="profile-image">
+            <h4>Tiger</h4>
+        </div>
+        <div>
+            <img src="elephant.jpeg" alt="Elephant" class="profile-image">
+            <h4>Elephant</h4>
+        </div>
+        <div>
+            <img src="dog.jpeg" alt="Dog" class="profile-image">
+            <h4>Dog</h4>
+        </div>
+        <div>
+            <img src="panda.jpeg" alt="Panda" class="profile-image">
+            <h4>Panda</h4>
+        </div>
     </div>
-    <div>
-        <img src="dog.jpeg"class="profile-image">
-        <h4>Dog</h4>
-    </div>
-    <div>
-        <img src="panda.jpeg"class="profile-image">
-        <h4>Panda</h4>
-    </div>
-    
-</div>
+
     <button onclick="alert('Thank you for coming to my profile!')">Hit me 👊</button>
 
 </body>
